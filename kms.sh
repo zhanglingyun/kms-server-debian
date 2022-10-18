@@ -3,7 +3,7 @@ apt-get update && apt-get upgrade -y
 apt-get install git wget curl gcc build-essential debhelper -y
 mkdir ~/vlmcsd-build
 cd ~/vlmcld-build
-git clone https://github.com/Wind4/vlmcsd
+git clone https://github.com/Wind4/vlmcsd 
 cd ~/vlmcsd-build/vlmcsd
 git submodele update --init debian
 dpkg-buildpackage -rfakeroot -D -us -uc
